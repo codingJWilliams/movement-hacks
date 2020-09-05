@@ -14,7 +14,7 @@ public class MixinEntity {
         if (this instanceof IPlayer) {
             IPlayer player = (IPlayer) this;
             if (player.isFlying())
-                return 0.5f;
+                return 1.5f;
             else if (player.isSprinting())
                 return oldVelocity * 1.5f;
         }
